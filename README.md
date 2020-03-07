@@ -11,9 +11,9 @@ Part of **SwiftBasics**: opionated components for building apps really fast.
 
 # How to use
 
-`youViewController.showLoading() //to start`
+`yourViewController.showLoading() //to start`
+`yourViewController.stopLoading() //to stop`
 
-`youViewController.stopLoading() //to stop`
 
 Or:
 
@@ -24,6 +24,5 @@ Or:
 
 `yourWindow.showLoading()`
 `yourWindow.stopLoading()`
-
 
 That's it.
