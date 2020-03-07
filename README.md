@@ -1,4 +1,4 @@
-# BasicLoader
+# SwiftMVPLoader
 Full screen loading for a swift app. 
 
 Part of **SwiftMVP**: opinionated components for building apps really fast.
