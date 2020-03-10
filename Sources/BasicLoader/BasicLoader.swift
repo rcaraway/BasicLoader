@@ -1,3 +1,6 @@
+#if !os(macOS)
+import UIKit
+
 private class LoadingView: UIView {
     static let shared = LoadingView()
     let indicator = UIActivityIndicatorView(style: .large)
@@ -55,3 +58,4 @@ extension UIViewController {
         view.stopLoading()
     }
 }
+#endif
