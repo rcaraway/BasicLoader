@@ -1,5 +1,5 @@
 import XCTest
-@testable import BasicLoader
+@testable import HappyLoader
 
 final class BasicLoaderTests: XCTestCase {
     func testExample() {
