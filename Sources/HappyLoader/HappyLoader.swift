@@ -1,5 +1,5 @@
 import UIKit
-
+import HappyColors
 
 private class LoadingView: UIView {
     static let shared = LoadingView()
@@ -9,10 +9,10 @@ private class LoadingView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor(white: 0.35, alpha: 0.5)
+        backgroundColor = UIColor.flatBlack.withAlphaComponent(0.35)
         layer.isOpaque = false
         indicator.hidesWhenStopped = true
-        indicator.color = .white
+        indicator.color = .flatWhite
         addSubview(indicator)
     }
     
