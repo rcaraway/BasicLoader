@@ -1,5 +1,5 @@
-#if !os(macOS)
 import UIKit
+
 
 private class LoadingView: UIView {
     static let shared = LoadingView()
@@ -59,4 +59,3 @@ extension UIViewController {
         view.stopLoading()
     }
 }
-#endif
