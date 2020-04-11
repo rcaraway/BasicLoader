@@ -3,7 +3,7 @@ import UIKit
 
 private class LoadingView: UIView {
     static let shared = LoadingView()
-    let indicator = UIActivityIndicatorView(style: .large)
+    let indicator = UIActivityIndicatorView(style: .whiteLarge)
     let label = UILabel()
     var isLoading: Bool { return indicator.isAnimating }
     
@@ -23,6 +23,7 @@ private class LoadingView: UIView {
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         frame = self.superview?.bounds ?? UIScreen.main.bounds
+        layer.cornerRadius = superview?.layer.cornerRadius ?? 0
         indicator.center = CGPoint(x: frame.width / 2.0, y: frame.height / 2.0)
     }
     
