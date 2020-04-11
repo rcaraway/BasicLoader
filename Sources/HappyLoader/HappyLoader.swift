@@ -40,7 +40,7 @@ private class LoadingView: UIView {
 }
 
 
-extension UIView {
+public extension UIView {
     func showLoading(text: String? = nil) {
         LoadingView.shared.showLoading(on: self)
     }
@@ -50,7 +50,7 @@ extension UIView {
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     func showLoading(text: String? = nil) {
         view.showLoading()
     }
